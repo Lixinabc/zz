@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表格布局</title>
+<body bgcolor="#666666">
+<style>
+ td{
+	 width:200px;
+ }
+ [typt="radio"]{
+	 width:100px;
+ }
+ h1{
+	 text-align:center;
+ }
+ .table{
+	 border-collapse:collapse;
+	 width:400px;
+ }
+  form{
+	  width:700px;
+	  height:700px;
+	  padding:30px 40px;
+	  margin:0 auto;
+  }
+  p{
+	  text-align:center;
+  }
+ [name="c7"]{
+	 width:300px;
+ }
+ [name="c8"]{
+	 width:50px
+	  }
+ [name="c9"]{
+	 width:50px
+	  }
+
+ 
+</style>
+</head>
+<form action="#"method="post" name="form">
+	<h1>增加快递信息</h1>
+		<fieldset>
+			<legend>发货单</legend>
+			<table>
+				<tr>
+					<td class="a1">发货人：</td>
+					<td class="b1">
+						<input type="text" name="c1">
+					</td>
+					<td class="a2">地址：</td>
+				    <td class="b2">
+					    <input type="text" name="c2">
+					</td>
+				</tr>
+				<tr>
+					<td class="a3">电话：</td>
+					<td class="b3">
+						<input type="text" name="c3">
+					</td>
+					<td class="a4">邮编：</td>
+					<td class="b4">
+						<input type="text" name="c4">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>收货单</legend>
+			<table>
+				<tr>
+					<td class="a1">收货人：</td>
+					<td class="b1">
+						<input type="text" name="c1">
+					</td>
+					<td class="a2">地址：</td>
+				    <td class="b2">
+					    <input type="text" name="c2">
+					</td>
+				</tr>
+				<tr>
+					<td class="a3">电话：</td>
+					<td class="b3">
+						<input type="text" name="c3">
+					</td>
+					<td class="a4">邮编：</td>
+					<td class="b4">
+						<input type="text" name="c4">
+					</td>
+				</tr>
+				<tr>
+					<td class="a5">地区：</td>
+					<td class="b5">
+						<select>
+							<option>北京</option>
+							<option>上海</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="a6">包装：</td>
+					<td colspan="3">
+						<input type="radio" name="sex" value="纸箱" id="e1">
+						<label for="e1">纸箱</label>
+						<input type="radio" name="sex" value="纸箱" id="e2">
+						<label for="e2">木箱</label>
+						<input type="radio" name="sex" value="纸箱" id="e3">
+						<label for="e3">快递袋</label>
+						<input type="radio" name="sex" value="纸箱" id="e4">
+						<label for="e4">其他</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="a6">付款方式:</td>
+					<td colspan="4">
+						<input type="radio" name="sex" value="纸箱" id="f1">
+						<label for="f1">现金</label>
+						<input type="radio" name="sex" value="纸箱" id="f2">
+						<label for="f2">支付宝</label>
+						<input type="radio" name="sex" value="纸箱" id="f3">
+						<label for="f3">网银</label>
+						<input type="radio" name="sex" value="纸箱" id="f4">
+						<label for="f4">ATM</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+			<fieldset>
+			<legend>货物信息</legend>
+			<table>
+				<tr>
+				  <td class="a7" colspan="2">货物名称:</td>
+					<td class="b7" colspan="5">
+						<input type="text" name="c7">
+					</td>
+				</tr>
+				<tr>
+				  <td class="a8">数量：</td>
+					<td class="b8" colspan="2">
+						<input type="text" name="c8">
+					</td>
+					<td class="a9">重量：</td>
+					<td class="b9">
+						<input type="text" name="c9">
+					</td>
+					<td>
+					<td class="a10">发货时间:</td>
+					<td class="b10">
+						<input type="text" name="c10">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+        <p> <input type="submit" value="确定">
+         <input type="button" value="取消">
+         </p>
+<body>
+</body>
+</html>
